@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}home{% endblock %}
+
+{% block main %}
+       
+       <table> 
+       <thead>
+           <th>Name </th>
+           <th>Age </th>
+           <th>Sport </th>
+       </thead>
+       <tbody>
+           <tr>
+               <td>
+               {{username}}
+           </td>
+           <td>
+               {% for AGEs in AGE %}
+               {% for keys in AGEs.keys() %}
+                   {{AGEs[keys]}}
+                 {% endfor %}
+                {% endfor %}
+           </td>
+           <td>
+               {% for SPORTs in SPORT %}
+                   {% for keys in SPORTs.keys() %}
+                    {{SPORTs[keys]}}
+                    {% endfor %}
+               {% endfor %}
+           </td>
+           </tr>
+       </tbody>
+       </table>
+     
+{% endblock %}

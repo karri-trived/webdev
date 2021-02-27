@@ -8,3 +8,5 @@ participants page
 ![WhatsApp Image 2021-02-27 at 23 48 32](https://user-images.githubusercontent.com/72554801/109396320-f0db8a00-7956-11eb-9861-23a83efcb4f1.jpeg)
 users details
 ![WhatsApp Image 2021-02-27 at 23 48 31 (3)](https://user-images.githubusercontent.com/72554801/109396322-f33de400-7956-11eb-8f1b-194da02b922d.jpeg)
+Actually I thought of sending mail to participants registered but my ide warned not to use personal mail id and password.So, I didn't add that option.
+If you want to test my website please contact me I will start server. 

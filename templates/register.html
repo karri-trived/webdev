@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    registration status
+{% endblock %}
+
+{% block main %}
+     <form action="/register" method="post">
+         <div class="form-group">
+             <input autocomplete="off" autofocus class="forn-control"  name="e-mail" placeholder="E-mail" type="email">
+         </div>
+         <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="Age" placeholder="age" type="number">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+             
+        {% for sport in sports %}
+            <input name="sport" type="checkbox" value="{{ sport }}"> {{ sport }}
+        {% endfor %}
+         </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+{% endblock %}

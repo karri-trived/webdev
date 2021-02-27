@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    {% for i in dicts %}
+    {% for keys in i.keys() %}
+     {{i[keys]}}
+    {%endfor%}
+    {%endfor%}
+{% endblock %}
